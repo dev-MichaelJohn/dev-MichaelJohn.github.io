@@ -1,0 +1,62 @@
+/* Custom styles that extend Tailwind */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom animation for hover effects */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.03);
+}
+
+/* Custom shadow for cards */
+.custom-shadow {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark mode overrides */
+.bg-white {
+    background-color: #1e293b !important;
+    color: #e2e8f0 !important;
+}
+
+.text-gray-700, .text-gray-600 {
+    color: #cbd5e1 !important;
+}
+
+.text-gray-900 {
+    color: #f8fafc !important;
+}
+
+.border-gray-300 {
+    border-color: #334155 !important;
+}
+
+.hover\:bg-gray-50:hover {
+    background-color: #334155 !important;
+}
+/* Animation for section entrance */
+.section-entrance {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
